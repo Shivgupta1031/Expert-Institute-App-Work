@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="2dp"
+    android:background="@color/colorPrimaryLight"
+    android:paddingStart="4dp"
+    android:paddingTop="6dp"
+    android:paddingEnd="4dp"
+    android:paddingBottom="6dp"
+    app:carbon_cornerRadius="12dp"
+    app:carbon_elevation="4dp"
+    app:carbon_elevationShadowColor="@color/carbon_black"
+    app:carbon_rippleColor="@color/colorAccentLight"
+    app:carbon_rippleStyle="background">
+
+    <carbon.widget.ImageView
+        android:id="@+id/image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_syllabus" />
+
+    <carbon.widget.TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@id/nextIcon"
+        android:layout_toEndOf="@id/image"
+        android:fontFamily="@font/main_font"
+        android:text="Syllabus"
+        android:textColor="@color/carbon_grey_800"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <carbon.widget.ImageView
+        android:id="@+id/nextIcon"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/arrow_next" />
+
+</carbon.widget.RelativeLayout>

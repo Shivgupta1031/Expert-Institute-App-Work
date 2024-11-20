@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="2dp"
+    android:background="@color/colorPrimaryLight"
+    android:paddingStart="4dp"
+    android:paddingTop="6dp"
+    android:paddingEnd="4dp"
+    android:paddingBottom="6dp"
+    app:carbon_cornerRadius="10dp"
+    app:carbon_elevation="6dp"
+    app:carbon_elevationShadowColor="@color/carbon_black"
+    app:carbon_rippleColor="@color/colorAccentLight"
+    app:carbon_rippleStyle="background">
+
+    <carbon.widget.ImageView
+        android:id="@+id/noticeImg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="4dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/btn_gradient"
+        android:visibility="gone"
+        app:carbon_cornerRadius="4dp" />
+
+    <carbon.widget.RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noticeImg">
+
+        <carbon.widget.ImageView
+            android:id="@+id/noticeIcon"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_notification" />
+
+        <carbon.widget.TextView
+            android:id="@+id/notificationTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@id/noticeIcon"
+            android:fontFamily="@font/main_font"
+            android:text="Message"
+            android:textColor="@color/carbon_grey_800"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/noticeDateTimeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notificationTxt"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/main_font"
+            android:text="Date"
+            android:textColor="@color/carbon_grey_600"
+            android:textSize="12sp" />
+
+    </carbon.widget.RelativeLayout>
+
+</carbon.widget.RelativeLayout>

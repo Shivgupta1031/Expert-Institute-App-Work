@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <carbon.widget.RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+
+        <carbon.widget.ImageView
+            android:id="@+id/menuImg"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="12dp"
+            android:padding="6dp"
+            android:src="@drawable/ic_menu"
+            app:carbon_cornerRadius="4dp"
+            app:carbon_rippleColor="@color/colorAccentLight"
+            app:carbon_rippleStyle="background" />
+
+        <TextView
+            android:id="@+id/appNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/main_font"
+            android:text="@string/app_name"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <carbon.widget.ImageView
+            android:id="@+id/notificationsImg"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="4dp"
+            android:padding="7dp"
+            android:src="@drawable/ic_notification"
+            app:carbon_cornerRadius="4dp"
+            app:carbon_rippleColor="@color/colorAccentLight"
+            app:carbon_rippleStyle="background" />
+
+    </carbon.widget.RelativeLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomBar"
+        android:layout_below="@id/topBar" />
+
+    <nl.joery.animatedbottombar.AnimatedBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        app:abb_badgeTextColor="@color/white"
+        app:abb_badgeTextSize="15sp"
+        app:abb_indicatorAppearance="round"
+        app:abb_indicatorColor="@color/colorPrimaryDark"
+        app:abb_indicatorHeight="5dp"
+        app:abb_indicatorMargin="16dp"
+        app:abb_selectedTabType="text"
+        app:abb_tabColor="@color/white"
+        app:abb_tabColorSelected="@color/colorPrimaryDark"
+        app:abb_tabs="@menu/home_bottom_menu"
+        app:abb_textAppearance="@style/BottomBarText"
+        app:abb_textSize="15sp"
+        app:abb_textStyle="bold" />
+
+</carbon.widget.RelativeLayout>

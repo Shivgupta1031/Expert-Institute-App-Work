@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <carbon.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@color/colorPrimaryLight"
+        android:orientation="vertical"
+        android:padding="12dp"
+        app:carbon_cornerRadius="10dp"
+        app:carbon_elevation="6dp"
+        app:carbon_elevationShadowColor="@color/carbon_black"
+        app:carbon_rippleColor="@color/colorAccentLight"
+        app:carbon_rippleStyle="background">
+
+        <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <carbon.widget.ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_question_mark" />
+
+            <carbon.widget.TextView
+                android:id="@+id/questionTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_toEndOf="@id/noticeIcon"
+                android:fontFamily="@font/main_font"
+                android:text="Here Is Your Question"
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.LinearLayout
+            android:id="@+id/optA_Cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:minHeight="54dp"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:carbon_cornerRadius="12dp"
+            app:carbon_elevation="8dp"
+            app:carbon_elevationShadowColor="@color/carbon_black">
+
+            <carbon.widget.ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/letter_a" />
+
+            <carbon.widget.TextView
+                android:id="@+id/optA_Txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_toEndOf="@id/noticeIcon"
+                android:fontFamily="@font/main_font"
+                android:text="Option A"
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp" />
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.LinearLayout
+            android:id="@+id/optB_Cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:minHeight="54dp"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:carbon_cornerRadius="12dp"
+            app:carbon_elevation="8dp"
+            app:carbon_elevationShadowColor="@color/carbon_black">
+
+            <carbon.widget.ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/letter_b" />
+
+            <carbon.widget.TextView
+                android:id="@+id/optB_Txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_toEndOf="@id/noticeIcon"
+                android:fontFamily="@font/main_font"
+                android:text="Option B"
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp" />
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.LinearLayout
+            android:id="@+id/optC_Cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:minHeight="54dp"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:carbon_cornerRadius="12dp"
+            app:carbon_elevation="8dp"
+            app:carbon_elevationShadowColor="@color/carbon_black">
+
+            <carbon.widget.ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/letter_c" />
+
+            <carbon.widget.TextView
+                android:id="@+id/optC_Txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_toEndOf="@id/noticeIcon"
+                android:fontFamily="@font/main_font"
+                android:text="Option C"
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp" />
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.LinearLayout
+            android:id="@+id/optD_Cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:minHeight="54dp"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            app:carbon_cornerRadius="12dp"
+            app:carbon_elevation="8dp"
+            app:carbon_elevationShadowColor="@color/carbon_black">
+
+            <carbon.widget.ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/letter_d" />
+
+            <carbon.widget.TextView
+                android:id="@+id/optD_Txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="6dp"
+                android:layout_toEndOf="@id/noticeIcon"
+                android:fontFamily="@font/main_font"
+                android:text="Option D"
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp" />
+
+        </carbon.widget.LinearLayout>
+
+    </carbon.widget.LinearLayout>
+
+</carbon.widget.ScrollView>

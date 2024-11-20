@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".activities.PlayVideoActivity">
+
+    <carbon.widget.RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+
+        <carbon.widget.ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="6dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_back"
+            app:carbon_cornerRadius="8dp"
+            app:carbon_rippleColor="@color/colorAccent"
+            app:carbon_rippleStyle="background"
+            app:carbon_tint="@color/carbon_grey_900" />
+
+        <carbon.widget.TextView
+            android:id="@+id/appNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/backBtn"
+            android:fontFamily="@font/main_font"
+            android:text="Watch Video"
+            android:textColor="@color/carbon_grey_900"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </carbon.widget.RelativeLayout>
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <carbon.widget.ScrollView
+        android:id="@+id/detailsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <carbon.widget.TextView
+                android:id="@+id/titleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="14dp"
+                android:background="@color/colorPrimaryLight"
+                android:fontFamily="@font/main_font"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="Title"
+                android:textAlignment="center"
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:carbon_cornerRadius="10dp"
+                app:carbon_elevation="8dp"
+                app:carbon_elevationShadowColor="@color/carbon_black" />
+
+            <carbon.widget.TextView
+                android:id="@+id/descriptionTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="14dp"
+                android:textAppearance="@android:style/TextAppearance.Small"
+                android:textColor="@color/carbon_grey_800" />
+
+        </carbon.widget.LinearLayout>
+
+    </carbon.widget.ScrollView>
+
+</carbon.widget.LinearLayout>

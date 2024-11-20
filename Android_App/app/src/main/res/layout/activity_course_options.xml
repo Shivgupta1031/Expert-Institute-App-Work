@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".activities.CourseOptionsActivity">
+
+    <carbon.widget.RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+
+        <carbon.widget.ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="6dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_back"
+            app:carbon_cornerRadius="8dp"
+            app:carbon_rippleColor="@color/colorAccent"
+            app:carbon_rippleStyle="background"
+            app:carbon_tint="@color/carbon_grey_900" />
+
+        <carbon.widget.TextView
+            android:id="@+id/appNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/backBtn"
+            android:fontFamily="@font/main_font"
+            android:text="Study Material"
+            android:textColor="@color/carbon_grey_900"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </carbon.widget.RelativeLayout>
+
+    <carbon.widget.RelativeLayout
+        android:id="@+id/liveVideosLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_gradient_3"
+        android:paddingStart="4dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="6dp"
+        app:carbon_cornerRadius="12dp"
+        app:carbon_elevation="4dp"
+        app:carbon_elevationShadowColor="@color/carbon_black"
+        app:carbon_rippleColor="@color/colorAccentLight"
+        app:carbon_rippleStyle="background">
+
+        <carbon.widget.ImageView
+            android:id="@+id/image1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/live_video" />
+
+        <carbon.widget.TextView
+            android:id="@+id/titleTxt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/nextIcon1"
+            android:layout_toEndOf="@id/image1"
+            android:fontFamily="@font/main_font"
+            android:text="Live Videos"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <carbon.widget.ImageView
+            android:id="@+id/nextIcon1"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/arrow_next" />
+
+    </carbon.widget.RelativeLayout>
+
+    <carbon.widget.RelativeLayout
+        android:id="@+id/recVideosLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_gradient_5"
+        android:paddingStart="4dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="6dp"
+        app:carbon_cornerRadius="12dp"
+        app:carbon_elevation="4dp"
+        app:carbon_elevationShadowColor="@color/carbon_black"
+        app:carbon_rippleColor="@color/colorAccentLight"
+        app:carbon_rippleStyle="background">
+
+        <carbon.widget.ImageView
+            android:id="@+id/image2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/rec_video" />
+
+        <carbon.widget.TextView
+            android:id="@+id/titleTxt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/nextIcon2"
+            android:layout_toEndOf="@id/image2"
+            android:fontFamily="@font/main_font"
+            android:text="Recorded Videos"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <carbon.widget.ImageView
+            android:id="@+id/nextIcon2"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/arrow_next" />
+
+    </carbon.widget.RelativeLayout>
+
+    <carbon.widget.RelativeLayout
+        android:id="@+id/mockTestsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_gradient_4"
+        android:paddingStart="4dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="6dp"
+        app:carbon_cornerRadius="12dp"
+        app:carbon_elevation="4dp"
+        app:carbon_elevationShadowColor="@color/carbon_black"
+        app:carbon_rippleColor="@color/colorAccentLight"
+        app:carbon_rippleStyle="background">
+
+        <carbon.widget.ImageView
+            android:id="@+id/image3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/ic_mock_test" />
+
+        <carbon.widget.TextView
+            android:id="@+id/titleTxt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/nextIcon3"
+            android:layout_toEndOf="@id/image3"
+            android:fontFamily="@font/main_font"
+            android:text="Mock Tests"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <carbon.widget.ImageView
+            android:id="@+id/nextIcon3"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/arrow_next" />
+
+    </carbon.widget.RelativeLayout>
+
+    <carbon.widget.RelativeLayout
+        android:id="@+id/pdfNotesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_gradient_6"
+        android:paddingStart="4dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="6dp"
+        app:carbon_cornerRadius="12dp"
+        app:carbon_elevation="4dp"
+        app:carbon_elevationShadowColor="@color/carbon_black"
+        app:carbon_rippleColor="@color/colorAccentLight"
+        app:carbon_rippleStyle="background">
+
+        <carbon.widget.ImageView
+            android:id="@+id/image4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/pdf_notes" />
+
+        <carbon.widget.TextView
+            android:id="@+id/titleTxt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/nextIcon4"
+            android:layout_toEndOf="@id/image4"
+            android:fontFamily="@font/main_font"
+            android:text="PDF Notes"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <carbon.widget.ImageView
+            android:id="@+id/nextIcon4"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/arrow_next" />
+
+    </carbon.widget.RelativeLayout>
+
+</carbon.widget.LinearLayout>

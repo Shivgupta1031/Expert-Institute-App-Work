@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".fragments.ProfileFragment">
+
+    <carbon.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp">
+
+        <carbon.widget.ImageView
+            android:id="@+id/profilePicImg"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/colorAccent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_profile_pic"
+            app:carbon_cornerRadius="70dp"
+            app:carbon_stroke="@color/colorAccent"
+            app:carbon_strokeWidth="2dp" />
+
+        <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="26dp"
+            android:orientation="vertical">
+
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:fontFamily="@font/main_font"
+                android:text="Username"
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <carbon.widget.EditText
+                android:id="@+id/usernameET"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimaryLight"
+                android:fontFamily="@font/main_font"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp"
+                app:carbon_cornerRadius="10dp" />
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="26dp"
+            android:orientation="vertical">
+
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:fontFamily="@font/main_font"
+                android:text="Email"
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <carbon.widget.EditText
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimaryLight"
+                android:fontFamily="@font/main_font"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp"
+                app:carbon_cornerRadius="10dp" />
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="26dp"
+            android:orientation="vertical">
+
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:fontFamily="@font/main_font"
+                android:text="Phone Number"
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <carbon.widget.EditText
+                android:id="@+id/numberET"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimaryLightDark"
+                android:enabled="false"
+                android:fontFamily="@font/main_font"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp"
+                app:carbon_cornerRadius="10dp" />
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="26dp"
+            android:orientation="vertical">
+
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:fontFamily="@font/main_font"
+                android:text="State"
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <carbon.widget.EditText
+                android:id="@+id/stateET"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorPrimaryLight"
+                android:fontFamily="@font/main_font"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp"
+                app:carbon_cornerRadius="10dp" />
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="26dp"
+            android:orientation="vertical">
+
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:fontFamily="@font/main_font"
+                android:text="Password"
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <carbon.widget.LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_height="48dp"
+                app:carbon_cornerRadius="10dp">
+
+                <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+                    android:id="@+id/passwordET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryLight"
+                    android:fontFamily="@font/main_font"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:textColor="@color/carbon_grey_800"
+                    android:textSize="16sp" />
+
+            </carbon.widget.LinearLayout>
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.Button
+            android:id="@+id/updateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_gradient_2"
+            android:fontFamily="@font/main_font"
+            android:gravity="center"
+            android:text="Update Profile"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:carbon_cornerRadius="10dp"
+            app:carbon_rippleColor="@color/colorAccent"
+            app:carbon_rippleStyle="background"
+            app:carbon_tint="@color/carbon_grey_300" />
+
+    </carbon.widget.LinearLayout>
+
+</carbon.widget.ScrollView>

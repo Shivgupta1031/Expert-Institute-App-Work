@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "545823901616",
+    "project_id": "expert-institute-41840",
+    "storage_bucket": "expert-institute-41840.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545823901616:android:f98c9ea252d5c37fed3875",
+        "android_client_info": {
+          "package_name": "com.devshiv.expertinstitute"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMM3lsXdw1bIbqVQzgTM83jBze6Kv0DuM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

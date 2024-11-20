@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/courseContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="8dp"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:carbon_cornerRadius="12dp"
+    app:carbon_elevation="4dp"
+    app:carbon_elevationShadowColor="@color/carbon_black"
+    app:carbon_rippleColor="@color/colorAccentLight"
+    app:carbon_rippleStyle="background">
+
+    <carbon.widget.ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitXY"
+        android:src="@color/colorAccent"
+        app:carbon_cornerRadius="14dp" />
+
+    <carbon.widget.TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/main_font"
+        android:gravity="center"
+        android:text="Title"
+        android:textAlignment="center"
+        android:textColor="@color/carbon_grey_800"
+        android:textSize="16sp" />
+
+    <carbon.widget.Button
+        android:id="@+id/playVideoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/otpETContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@color/analogous_2"
+        android:fontFamily="@font/main_font"
+        android:gravity="center"
+        android:text="Play Video"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:carbon_cornerRadius="10dp"
+        app:carbon_rippleColor="@color/colorAccentLight"
+        app:carbon_rippleStyle="background"
+        app:carbon_tint="@color/carbon_grey_300" />
+
+</carbon.widget.LinearLayout>

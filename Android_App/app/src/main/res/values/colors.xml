@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryLight">#F8F8F8</color>
+    <color name="colorPrimaryLightDark">#D5D3D3</color>
+    <color name="colorPrimaryDark">#FFD600</color>
+    <color name="colorPrimaryDark_2">#FFAB00</color>
+    <color name="colorAccent">#C40951</color>
+    <color name="colorAccentLight">#DF4E86</color>
+
+    <color name="analogous_2">#F6420D</color>
+
+    <color name="triadic_1">#0DF6B6</color>
+    <color name="triadic_2">#B60DF6</color>
+
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_50">#80000000</color>
+
+</resources>

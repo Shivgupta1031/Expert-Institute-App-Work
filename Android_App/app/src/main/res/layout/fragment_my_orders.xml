@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".fragments.MyOrdersFragment">
+
+    <carbon.widget.LinearLayout
+        android:id="@+id/tabsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="14dp"
+        android:background="@color/colorPrimaryLight"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:weightSum="3"
+        app:carbon_cornerRadius="14dp"
+        app:carbon_elevation="6dp"
+        app:carbon_elevationShadowColor="@color/carbon_black">
+
+        <carbon.widget.TextView
+            android:id="@+id/myCourseTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:fontFamily="@font/main_font"
+            android:gravity="center"
+            android:paddingStart="4dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="10dp"
+            android:text="My Course"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:carbon_cornerRadius="14dp"
+            app:carbon_rippleColor="@color/colorAccentLight"
+            app:carbon_rippleStyle="background" />
+
+        <carbon.widget.TextView
+            android:id="@+id/ebooksTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/main_font"
+            android:gravity="center"
+            android:paddingStart="4dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="10dp"
+            android:text="Ebooks"
+            android:textColor="@color/carbon_grey_800"
+            android:textSize="16sp"
+            app:carbon_cornerRadius="14dp"
+            app:carbon_rippleColor="@color/colorAccentLight"
+            app:carbon_rippleStyle="background" />
+
+        <carbon.widget.TextView
+            android:id="@+id/mockTestTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/main_font"
+            android:gravity="center"
+            android:paddingStart="4dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="10dp"
+            android:text="Mock Tests"
+            android:textColor="@color/carbon_grey_800"
+            android:textSize="16sp"
+            app:carbon_cornerRadius="14dp"
+            app:carbon_rippleColor="@color/colorAccentLight"
+            app:carbon_rippleStyle="background" />
+
+    </carbon.widget.LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabsContainer" />
+
+    <carbon.widget.LinearLayout
+        android:id="@+id/nothingFoundContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <carbon.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_empty_cart" />
+
+        <carbon.widget.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/main_font"
+            android:text="No Purchases Yet!"
+            android:textColor="@color/carbon_grey_800"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </carbon.widget.LinearLayout>
+
+</carbon.widget.RelativeLayout>

@@ -1,0 +1,35 @@
+package com.devshiv.expertinstitute.model
+
+import com.devshiv.expertinstitute.utils.Utils
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import java.lang.reflect.Type
+
+data class NotificationsModel(
+    var message: String? = "",
+    var data: String? = null
+) {
+
+    fun getDataDecrypted(): ArrayList<NotificationsData>? {
+        val gson = Gson()
+        val type: Type = object : TypeToken<ArrayList<NotificationsData>?>() {}.type
+        return gson.fromJson(Utils.decrypt(data!!), type)
+    }
+
+    fun getMessageDecrypted(): String? {
+        return if (message != null) {
+            Utils.decrypt(message!!)
+        } else {
+            ""
+        }
+    }
+
+    data class NotificationsData(
+        var id: Int? = null,
+        var title: String? = null,
+        var message: String? = null,
+        var image: String? = null,
+        var click_url: String? = null,
+        var created: String? = null,
+    )
+}

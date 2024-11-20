@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activities.TestResultsActivity">
+
+    <carbon.widget.RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+
+        <carbon.widget.ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="6dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_back"
+            app:carbon_cornerRadius="8dp"
+            app:carbon_rippleColor="@color/colorAccent"
+            app:carbon_rippleStyle="background"
+            app:carbon_tint="@color/carbon_grey_900" />
+
+        <carbon.widget.TextView
+            android:id="@+id/appNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/backBtn"
+            android:fontFamily="@font/main_font"
+            android:text="Test Results"
+            android:textColor="@color/carbon_grey_900"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </carbon.widget.RelativeLayout>
+
+    <carbon.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimaryLight"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="16dp"
+        app:carbon_cornerRadius="12dp"
+        app:carbon_elevation="8dp"
+        app:carbon_elevationShadowColor="@color/carbon_black"
+        tools:listitem="@layout/layout_video_item">
+
+        <carbon.widget.ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:src="@drawable/questions_results_bg" />
+
+        <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            app:carbon_cornerRadius="12dp"
+            app:carbon_elevation="8dp"
+            app:carbon_elevationShadowColor="@color/carbon_black">
+
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/main_font"
+                android:text="Total Time Taken : "
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <carbon.widget.TextView
+                android:id="@+id/totalTimeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/noticeIcon"
+                android:fontFamily="@font/main_font"
+                android:text="20"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            app:carbon_cornerRadius="12dp"
+            app:carbon_elevation="8dp"
+            app:carbon_elevationShadowColor="@color/carbon_black">
+
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/main_font"
+                android:text="Total No. Of Questions : "
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <carbon.widget.TextView
+                android:id="@+id/totalQuestionsTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/noticeIcon"
+                android:fontFamily="@font/main_font"
+                android:text="20"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            app:carbon_cornerRadius="12dp"
+            app:carbon_elevation="8dp"
+            app:carbon_elevationShadowColor="@color/carbon_black">
+
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/main_font"
+                android:text="No. Of Questions Answered : "
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <carbon.widget.TextView
+                android:id="@+id/questAnsweredTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/noticeIcon"
+                android:fontFamily="@font/main_font"
+                android:text="20"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            app:carbon_cornerRadius="12dp"
+            app:carbon_elevation="8dp"
+            app:carbon_elevationShadowColor="@color/carbon_black">
+
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/main_font"
+                android:text="No. Of Correct Answers : "
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <carbon.widget.TextView
+                android:id="@+id/correctAnswersTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/noticeIcon"
+                android:fontFamily="@font/main_font"
+                android:text="20"
+                android:textColor="@color/carbon_green_600"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            app:carbon_cornerRadius="12dp"
+            app:carbon_elevation="8dp"
+            app:carbon_elevationShadowColor="@color/carbon_black">
+
+            <carbon.widget.TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/main_font"
+                android:text="No. Of Wrong Answers : "
+                android:textColor="@color/carbon_grey_800"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <carbon.widget.TextView
+                android:id="@+id/wrongAnswersTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/noticeIcon"
+                android:fontFamily="@font/main_font"
+                android:text="20"
+                android:textColor="@color/analogous_2"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.Button
+            android:id="@+id/viewAnswersBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/analogous_2"
+            android:fontFamily="@font/main_font"
+            android:text="View Answers"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:carbon_cornerRadius="10dp"
+            app:carbon_rippleColor="@color/colorAccentLight"
+            app:carbon_rippleStyle="background" />
+
+    </carbon.widget.LinearLayout>
+
+</carbon.widget.RelativeLayout>

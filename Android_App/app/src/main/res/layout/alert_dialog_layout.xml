@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <carbon.widget.LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_gradient_2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:carbon_cornerRadius="8dp"
+        app:carbon_elevation="6dp"
+        app:carbon_elevationShadowColor="@color/carbon_black">
+
+        <carbon.widget.ImageView
+            android:id="@+id/iconTxt"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_icon"
+            app:carbon_cornerRadius="10dp" />
+
+        <carbon.widget.TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/main_font"
+            android:text="Title"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <carbon.widget.TextView
+            android:id="@+id/descriptionTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/main_font"
+            android:text="Description"
+            android:textAlignment="center"
+            android:textColor="@color/carbon_grey_200"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <carbon.widget.LinearLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="14dp"
+            android:weightSum="2">
+
+            <carbon.widget.Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/analogous_2"
+                android:fontFamily="@font/main_font"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:carbon_rippleColor="@color/transparent_50"
+                app:carbon_rippleStyle="background" />
+
+            <carbon.widget.Button
+                android:id="@+id/yesBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/triadic_1"
+                android:fontFamily="@font/main_font"
+                android:text="Yes"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:carbon_rippleColor="@color/transparent_50"
+                app:carbon_rippleStyle="background" />
+
+        </carbon.widget.LinearLayout>
+
+    </carbon.widget.LinearLayout>
+
+</carbon.widget.LinearLayout>

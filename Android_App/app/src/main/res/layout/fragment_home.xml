@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".fragments.HomeFragment">
+
+    <carbon.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="4dp">
+
+        <carbon.widget.RelativeLayout
+            android:id="@+id/topBanner"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorAccent"
+            app:carbon_cornerRadius="14dp"
+            app:carbon_elevation="4dp"
+            app:carbon_elevationShadowColor="@color/carbon_black">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="10dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="2dp"
+                app:sliderIndicatorRadius="1.5dp"
+                app:sliderIndicatorSelectedColor="@color/colorAccent"
+                app:sliderIndicatorUnselectedColor="@color/carbon_grey_600" />
+
+        </carbon.widget.RelativeLayout>
+
+        <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <carbon.widget.LinearLayout
+                android:id="@+id/paidCoursesBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_gradient_3"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                app:carbon_cornerRadius="12dp"
+                app:carbon_elevation="4dp"
+                app:carbon_elevationShadowColor="@color/carbon_black"
+                app:carbon_rippleColor="@color/colorAccentLight"
+                app:carbon_rippleStyle="background">
+
+                <carbon.widget.ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_paid_courses" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/main_font"
+                    android:gravity="center"
+                    android:text="Paid Courses"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </carbon.widget.LinearLayout>
+
+            <carbon.widget.LinearLayout
+                android:id="@+id/freeClassesBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_gradient_6"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                app:carbon_cornerRadius="12dp"
+                app:carbon_elevation="4dp"
+                app:carbon_elevationShadowColor="@color/carbon_black"
+                app:carbon_rippleColor="@color/colorAccentLight"
+                app:carbon_rippleStyle="background">
+
+                <carbon.widget.ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_free_class" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/main_font"
+                    android:gravity="center"
+                    android:text="Free Classes"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </carbon.widget.LinearLayout>
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <carbon.widget.LinearLayout
+                android:id="@+id/ebookBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_gradient_5"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                app:carbon_cornerRadius="12dp"
+                app:carbon_elevation="4dp"
+                app:carbon_elevationShadowColor="@color/carbon_black"
+                app:carbon_rippleColor="@color/colorAccentLight"
+                app:carbon_rippleStyle="background">
+
+                <carbon.widget.ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_ebook" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/main_font"
+                    android:gravity="center"
+                    android:text="Buy Ebooks"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </carbon.widget.LinearLayout>
+
+            <carbon.widget.LinearLayout
+                android:id="@+id/mockTestBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_gradient_4"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                app:carbon_cornerRadius="12dp"
+                app:carbon_elevation="4dp"
+                app:carbon_elevationShadowColor="@color/carbon_black"
+                app:carbon_rippleColor="@color/colorAccentLight"
+                app:carbon_rippleStyle="background">
+
+                <carbon.widget.ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_mock_test" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/main_font"
+                    android:gravity="center"
+                    android:text="Mock Test"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </carbon.widget.LinearLayout>
+
+        </carbon.widget.LinearLayout>
+
+        <carbon.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <carbon.widget.LinearLayout
+                android:id="@+id/syllabusBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_gradient_7"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                app:carbon_cornerRadius="12dp"
+                app:carbon_elevation="4dp"
+                app:carbon_elevationShadowColor="@color/carbon_black"
+                app:carbon_rippleColor="@color/colorAccentLight"
+                app:carbon_rippleStyle="background">
+
+                <carbon.widget.ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_syllabus" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/main_font"
+                    android:gravity="center"
+                    android:text="Syllabus"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </carbon.widget.LinearLayout>
+
+            <carbon.widget.LinearLayout
+                android:id="@+id/whatsappBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_gradient_8"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp"
+                app:carbon_cornerRadius="12dp"
+                app:carbon_elevation="4dp"
+                app:carbon_elevationShadowColor="@color/carbon_black"
+                app:carbon_rippleColor="@color/colorAccentLight"
+                app:carbon_rippleStyle="background">
+
+                <carbon.widget.ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_whatsapp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/main_font"
+                    android:gravity="center"
+                    android:text="Whatsapp Us"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </carbon.widget.LinearLayout>
+
+        </carbon.widget.LinearLayout>
+
+    </carbon.widget.LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
